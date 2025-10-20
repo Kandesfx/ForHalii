@@ -38,8 +38,7 @@
       </div>
                 </div>
                 <div id="clock-box">
-                    <span class="STYLE1"></span><font color="#FF0000">Thời gian bên nhau...</font> -->
-	 <span class="STYLE1"> Time of love...</span>
+                    <span class="STYLE1"></span><font color="#FF0000">Thời gian bên nhau...</font>
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -177,7 +176,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2024,12 , 8); 			
+		    together.setFullYear(2024,8 , 12); 			
 		    together.setHours(0);							
 		    together.setMinutes(0);				
 		    together.setSeconds(0);					
@@ -186,7 +185,7 @@
            
 
 		    $("#code").show().typewriter();
-            $("#clock-box").fadeIn(500);
+            $("#clock-box").fadeIn(6000);
             while (true) {
                 timeElapse(together);
                 $await(Jscex.Async.sleep(1000));
